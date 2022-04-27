@@ -1,3 +1,10 @@
+function nishab() {
+    const payableNishab = document.getElementById('nishab');
+    const payableNishabValue = parseFloat(payableNishab.value);
+    return payableNishabValue;
+}
+
+
 document.getElementById('calculate').addEventListener('click', function () {
     const bank = document.getElementById('bank');
     const bankValue = parseFloat(bank.value);
@@ -11,11 +18,22 @@ document.getElementById('calculate').addEventListener('click', function () {
     const business = document.getElementById('business');
     const businessValue = parseFloat(business.value);
     business.value = '';
-
-    
+    const loan = document.getElementById('loan');
+    const loanValue = parseFloat(loan.value);
+    loan.value = "";
+    //console.log(loanValue)
     const fullValue = bankValue + goldValue + silverValue + businessValue;
-    const balanace = document.getElementById('zakat');
-    balanace.innerText = fullValue;
+    const realValue = fullValue - loanValue;
+    console.log(realValue)
+    if (realValue>nishab()) {
+        
+        const balanace = document.getElementById('zakat');
+        balanace.innerText = realValue;  
+    }
+    else {
+       alert('You Do not have enough money!')
+    }
+    
 });
 document.getElementById('save').addEventListener('click', () => {
     const total = document.getElementById('zakat');
