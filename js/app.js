@@ -18,17 +18,11 @@ document.getElementById('calculate').addEventListener('click', function () {
     const business = document.getElementById('business');
     const businessValue = parseFloat(business.value);
     business.value = '';
-    const loan = document.getElementById('loan');
-    const loanValue = parseFloat(loan.value);
-    loan.value = "";
-    //console.log(loanValue)
-    const fullValue = bankValue + goldValue + silverValue + businessValue;
-    const realValue = fullValue - loanValue;
-    console.log(realValue)
-    if (realValue>nishab()) {
-        
+
+    if (goldValue+silverValue+businessValue+bankValue>nishab()) {
+        const fullValue = bankValue + goldValue + silverValue + businessValue;
         const balanace = document.getElementById('zakat');
-        balanace.innerText = realValue;  
+        balanace.innerText = fullValue;  
     }
     else {
        alert('You Do not have enough money!')
