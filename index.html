@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishab Calculator</title>
+    <title>zakat-management System </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <section class="container bg-light rounded mx-auto text-center my-4 p-4">
-        <h3 class="text-primary">Zakat Management 💰</h3>
+        <h3 class="text-secondary">Zakat Management 💰</h3>
         <p class="text-danger">Give your 2.58% by the name of Allah</p>
         <div class="row g-4 my-2">
             <div class="col-lg-6 my-auto">
                 <img src="img/zakat-management.jpg" class="img-fluid rounded" alt="">
             </div>
-            <div class="col-lg-6">
-                <h5 class="text-success"><span>Nishab </span><input type="number" value="40050.15" id="nishab" placeholder="40050.15"></h5>
+            <div class="col-lg-6 bg-white p-4">
+                <h5 class="text-success"><span>Nishab </span><input type="number" class="border-0 bg-light" value="40050.15" id="nishab" placeholder="40050.15"></h5>
                 <h6>Zakatable</h6>
-                <p><span>Bank Cash</span> <input id="bank" type="number" value="200000"></p>
-                <p><span>Value of Gold</span> <input id="gold" type="number" value="100000"></p>
-                <p><span>Value of Silver</span> <input  id="silver" type="number" value="40000"></p>
-                <p ><span>Business or Others <input id="business" type="number" value="00"></p>
+                <p><span>Bank Cash: </span> <input id="bank" type="number" class="border-0 bg-light" value="200000"></p>
+                <p><span>Value of Gold: </span> <input id="gold" type="number" class="border-0 bg-light" value="100000"></p>
+                <p><span>Value of Silver: </span> <input  id="silver" type="number" class="border-0 bg-light" value="40000"></p>
+                <p ><span>Business or Others: <input id="business" type="number" class="border-0 bg-light" value="00"></p>
                 
                 <h5>Total Balance <span id="zakat"></span></h5>
                 <button id="calculate" class="btn btn-success my-1">Calculator</button>
-                <p><input type="number" value="2.58" placeholder="2.58"> <span>%</span> <button class="btn btn-danger" id="save">Save</button></p>
+                <p><input type="number" class="border-0 bg-light" value="2.58" placeholder="2.58"> <span>%</span> <button class="btn btn-danger" id="save">Save</button></p>
                 <h5>Payable: <span id="pay"></span></h5>
                 <h6>Goods Trades</h6>
-                <p><span>Value of Trades</span> <input type="number" value="18000" id="goods"></p>
+                <p><span>Value of Trades: </span> <input type="number" class="border-0 bg-light" value="18000" id="goods"></p>
                 
                 <p>Goods Value: <span id="goods-value"></span></p>
-                <p><input type="number" value="5"> <span>%</span> <button class="btn btn-danger" id="goods-save">save</button></p>
+                <p><input type="number" class="border-0 bg-light" value="5"> <span>%</span> <button class="btn btn-danger" id="goods-save">save</button></p>
 
                 <h5 class="text-success">Total Payable Zakat: <span id="total-zakat"></span></h5>
                 <button class="btn btn-success" id="total-value">Total Zakat</button>
